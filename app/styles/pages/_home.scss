@@ -1,0 +1,64 @@
+.top {
+  padding: 80px 40px 40px 40px;
+  text-align: center;
+  .title {
+    font-size: 2.0rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    color: $steel;
+  }
+
+  .button-row {
+    margin-top: 10px;
+  }
+
+  .contact-me, .linked-in-connect {
+    display: inline-block;
+  }
+}
+
+.section-title {
+  font-size: 1.4rem;
+  color: $steel;
+}
+
+.career-experience, .academics {
+
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+
+  .item-divider {
+    height: 2px;
+    width: 95%;
+    background-color: $light-blue;
+  }
+
+  .common-item {
+    margin: 10px;
+    background-color: $ghost;
+    color: $charcoal;
+  }
+
+  .common-item-title {
+    font-size: 1.3rem;
+
+    .date {
+      padding-left: 10px;
+      font-size: 1.0rem;
+      color: $steel;
+    }
+  }
+
+  .common-item-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .common-item-descriptions {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+}
