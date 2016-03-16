@@ -1,0 +1,10 @@
+app/index.html
+app/about.html
+app/styles/styles.css
+dist
+dist/*
+.publish
+.publish/*
+.idea
+.idea/*
+node_modules
