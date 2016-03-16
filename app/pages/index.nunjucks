@@ -12,8 +12,24 @@
     </div>
     <div class="linked-in-connect">
       <a href="<$ basic.linkedInUrl $>" target="_blank">
-        <div class="button secondary">Connect on LinkedIn</div>
+        <div class="button success">Connect on LinkedIn</div>
       </a>
+    </div>
+  </div>
+</section>
+    
+<section class="about-me">
+  <div class="section-title">About Emily</div>
+  <div class="row">
+    <div class="medium-3 columns text-center">
+      <img src="images/profile-tight.jpg" alt="Emily C. Webb - Curriculum Developer"/>
+    </div>
+    <div class="medium-9 columns open_sans-light">
+      <p>I am passionate about engaging students in <span class="open_sans-normal">quality learning experiences</span>.
+      Currently I have am living out my passion by <span class="open_sans-normal">teaching Kindergarten</span> and <span class="open_sans-normal">developing curriculum</span> for Seminole County School District.
+      I believe that all students should have access to high-quality education and have been working to that end in <span class="open_sans-normal">Title I schools</span> since 2012.</p>
+
+      <p>My husband Matt and I will celebrate our 4th wedding anniversary May of 2016 and have a four-legged fur child, Colbie Webb. When I'm not teaching America's youth, writing curriculum, or spending time with my family you will probably find me reading a cheesy romance novel or traveling around the world.</p>
     </div>
   </div>
 </section>
@@ -43,7 +59,10 @@
   <div class="row common-item career-item">
     <div class="medium-12 columns">
       <div class="common-item-title career-item-title">
-        Curriculum Writer - 21st Century Learning Grant <span class="date">Summer 2015</span>
+        Curriculum Writer <span class="date">Summer 2015</span>
+      </div>
+      <div class="common-item-subtitle career-item-subtitle">
+        21st Century Learning Program Grant
       </div>
       <div class="item-divider"></div>
       <div class="common-item-descriptions career-item-descriptions">
