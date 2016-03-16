@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer_container {
+  position: relative;
+  background-color: $charcoal;
+
+  .copyright {
+    display: inline-block;
+    @extend .footer_text;
+    font-size: 11px;
+    line-height: 1.5rem;
+  }
+}
+
+.footer_content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+
+  a {
+    font-size: 18px;
+    color: $base;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:hover, &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.footer_text {
+  @extend .roboto_light;
+  color: $base;
+  a {
+    color: $base;
+  }
+}
+
+.icon-email {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAulBMVEUAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PC+8zA1AAAAPXRSTlMAAgMFCAkLDQ8QEhUXHyAjJjA7PT5DREtNUVJXWFtfdHl+f4OFi5Sao6WvtLy+wcPKzs/e4OLr7e/x9/v9EW8EYQAAAJhJREFUKFO9jscSgkAQBXcXUTFgFjMGxIw52///Wx5QBL1a9LG7at4IEQNqwi+7lBBD2fnxrqqnBatE4Rz1LelgCDjldS+kT6bugSEAmnIU+KV/wA+4qvbw/UC24RPYpnJH4F59P/kOdJU2Z59VJtEwyhxsaWnlW6kSCbPiFRbJPtDohcLaek0D2OMgXBzCTDeExr/5a4iBJ30qTWR3M8ncAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+
+  position: relative;
+  top: 4px;
+}
+
+.icon-linkedin {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAe1BMVEUAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PBYuq98AAAAKHRSTlMAAQMEBQcNICcqMTU2OkFCQ0RFUlZ3eX+FiIuOm7K5zNXZ2uLm6e/9Z7au3AAAAHVJREFUKM/VzTkOglAAANEBd3HfQVEU0bn/CW1MzP/BzsZpXzHwrXRbV5s2KFQXLdCoHlsgV122Pu7Vmp+0V83goDpmeLo9ylUSw7RQ1Usvgtp35wg+jSLYdZNBo5qHUALMVK8hzAH6qs8QJgAdVUPIANJ/hBc9DSpbuyKfIAAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+
+  position: relative;
+  top: 2px;
+}
+
+.footer-bottom-copyright {
+  background-color: darken($steel, 3%);
+  height: 28px;
+}

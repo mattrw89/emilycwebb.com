@@ -1,0 +1,26 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-bar-replacement-band {
+  width: 100%;
+  height: 95px;
+  background-color: $topbar-bg-color;
+  @extend .show-for-large-up;
+}
+
+.page_title_container {
+  width: 100%;
+  height:80px;
+  background-color: $light-blue;
+}
+
+.page_title_container_thin {
+  width: 100%;
+  height:40px;
+  background-color: $light-blue; //$shiftLightestGray;
+}
+
+body {
+  background-color: $off-white;
+}

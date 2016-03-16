@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_100_1430487322.woff2) format('woff2'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_100_1430487322.woff) format('woff'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_100_1430487322.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_300_1430487322.woff2) format('woff2'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_300_1430487322.woff) format('woff'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_300_1430487322.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_400_1430487322.woff2) format('woff2'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_400_1430487322.woff) format('woff'), url(//d327l0dy67qzb.cloudfront.net/fonts/Roboto_normal_400_1430487322.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(../fonts/Montserrat_normal_400_1430487322.woff2) format('woff2'), url(../fonts/Montserrat_normal_400_1430487322.woff) format('woff'), url(../fonts/Montserrat_normal_400_1430487322.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/Open_Sans_normal_300_1430487322.woff2) format('woff2'), url(../fonts/Open_Sans_normal_300_1430487322.woff) format('woff'), url(../fonts/Open_Sans_normal_300_1430487322.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/Open_Sans_normal_400_1430487322.woff2) format('woff2'), url(../fonts/Open_Sans_normal_400_1430487322.woff) format('woff'), url(../fonts/Open_Sans_normal_400_1430487322.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(../fonts/Open_Sans_italic_300_1430487322.woff2) format('woff2'), url(../fonts/Open_Sans_italic_300_1430487322.woff) format('woff'), url(../fonts/Open_Sans_italic_300_1430487322.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/Open_Sans_italic_400_1430487322.woff2) format('woff2'), url(../fonts/Open_Sans_italic_400_1430487322.woff) format('woff'), url(../fonts/Open_Sans_italic_400_1430487322.ttf) format('truetype');
+}
+
+
+
+.roboto_base {
+  font-family: 'Roboto', sans-serif;
+}
+
+.roboto_ultralight {
+  @extend .roboto_base;
+  font-weight: 100;
+}
+
+.roboto_light {
+  @extend .roboto_base;
+  font-weight: 300;
+}
+
+.roboto_med {
+  @extend .roboto_base;
+  font-weight: 400;
+}
+
+.helvetica {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}

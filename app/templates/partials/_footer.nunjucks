@@ -1,0 +1,30 @@
+<div class="shift_color_bar short left-to-right">
+  <% for i in range(0, 15) %>
+  <div class="block-varA-<$ i + 1 $>"></div>
+  <% endfor %>
+</div>
+<div class="footer_container">
+  <div class="footer_content">
+
+    <div class="row text-center">
+      <div class="medium-6 columns">
+        <a href="mailto:<$ basic.contactEmail $>">
+          <i class="icon-email"></i>
+          <span>Contact Emily</span>
+        </a>
+      </div>
+      <div class="medium-6 columns">
+        <a href="<$ basic.linkedInUrl $>" target="_blank"><span>Connect on</span>&nbsp;<i class="icon-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div> <!-- end container -->
+
+  <div class="footer-bottom-copyright">
+    <div class="row">
+      <div class="text-center">
+        <p class="copyright">Copyright © <$ basic.currentYear $> - Emily C. Webb All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>

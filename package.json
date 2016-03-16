@@ -1,0 +1,32 @@
+{
+  "name": "YourProject",
+  "version": "0.0.1",
+  "description": "Description of your project",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.9.10",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-data": "^1.2.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-nunjucks-render": "^1.0.0",
+    "gulp-path": "^2.0.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-replace": "^0.4.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sequence": "^0.4.1",
+    "gulp-shell": "^0.5.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "gulp-gh-pages": "^0.5.4",
+    "lodash": "^3.10.1",
+    "merge-stream": "^1.0.0",
+    "sassdash": "^0.8.0"
+  }
+}

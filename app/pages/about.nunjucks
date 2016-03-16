@@ -1,0 +1,89 @@
+<% set currentPage = "about" %>
+
+<% extends "layout.nunjucks" %>
+
+<% block content %>
+
+<div class="about_image_band"></div>
+
+<div class="page_title_container">
+  <div class="about_large_tagline">
+    <h1 class="roboto_light text-center">
+      About Shift Agent™
+    </h1>
+  </div>
+</div>
+<div class="about_area_container">
+  <div class="about_area">
+    <div class="about_small_tagline">
+      <h2 class="roboto_light text-center">
+        OUR VISION
+      </h2>
+    </div>
+    <div class="row">
+      <div class="medium-6 columns">
+        <p class="about_content text-justify">We believe in building a culture of hospitality through better scheduling.
+          We believe in helping businesses to succeed, and that when this happens, it becomes possible for communities
+          to flourish. Our mission is to raise the quality of the workclimate, so that you can build a great culture
+          and save time and money.</p>
+      </div>
+      <div class="medium-6 columns">
+        <p class="about_content text-justify">The philosophy behind Shift Agent is that your time is valuable, and we want to multiply your effectiveness
+          by giving you the tools you need to schedule your store with excellence. Shift Agent is designed to foster
+          personal responsibility among your employees as we provide powerful flexibility. </p>
+      </div>
+    </div>
+  </div>
+  <div class="about_bar_area">
+    <div class="shift_color_bar medium left-to-right">
+      <% for i in range(0, 15) %>
+      <div class="block-varA-<$ i + 1 $>"></div>
+      <% endfor %>
+    </div>
+  </div>
+  <div class="about_area">
+    <div class="about_small_tagline">
+      <h2 class="roboto_light text-center">
+       LEADERSHIP
+      </h2>
+    </div>
+    <ul class="small-block-grid-1 large-block-grid-3">
+      <li>
+        <img class="th img_team" src="//d327l0dy67qzb.cloudfront.net/landing/images/SA_Team_Matt_sm_stroke.png">
+        <div class="leadership_story_container">
+          <p class="stories text-justify">Matt is an electrical engineer with experience from semiconductor development to web application development. He really enjoys designing innovative digital solutions. <a class="block" href="https://www.linkedin.com/in/mattrw89" target="_blank"><i class="linkedin-icon"></i></a></p>
+        </div>
+      </li>
+      <li>
+        <img class="th img_team" src="//d327l0dy67qzb.cloudfront.net/landing/images/SA_Team_David_sm_stroke.png">
+        <div class="leadership_story_container">
+          <p class="stories text-justify">David is a great communicator and dreamer with passions that include working with Millennials and designing things. He's figuring out WebStorm, and he's got a lot of ideas. <a class="block" href="https://www.linkedin.com/in/davidpezzoli" target="_blank"><i class="linkedin-icon"></i></a></p>
+        </div>
+      </li>
+      <li>
+        <img class="th img_team" src="//d327l0dy67qzb.cloudfront.net/landing/images/SA_Team_Chris_sm_stroke.png">
+        <div class="leadership_story_container">
+          <p class="stories text-justify">Chris is a filmmaker with an incredible knack for telling great stories. He has a goal of teaching young kids to make films in other countries. He uses Adobe products a lot. <a href="http://cstowle.com" target="_blank">cstowle.com</a><a class="block" href="https://www.linkedin.com/in/cstowle" target="_blank"><i class="linkedin-icon"></i></a></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="about_area">
+    <div class="about_small_tagline">
+      <h2 class="roboto_light text-center">
+        OUR STORY
+      </h2>
+    </div>
+    <p class="about_content text-justify">Our team loves working together to solve hard problems. With years of experience
+    in working with industry leaders, we have created a scheduling solution for you that has your whole team in mind.</p>
+    <p class="about_content text-justify">We started building Shift Agent because we saw a market need for improved communication in
+      industries that have the hourly employees. We believe in using design thinking to make the best scheduling tool
+      in the world that places a high value on excellent operations and caring for people. </p>
+    <p class="about_content text-justify">The Shift Agent Labs team is an alliance member
+      of <a href="http://www.bissellgroup.com" target="_blank">The Bissell Group</a>.</p>
+  </div>
+
+</div>
+<% endblock %>
+

@@ -1,0 +1,45 @@
+<div class="contain-to-grid sticky">
+  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a class="logo hide-for-large-up" href="#">
+            <img src="//d327l0dy67qzb.cloudfront.net/landing/images/Shift-Agent-ICON-150px.png"/>
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+
+      <div class="logo-wrapper show-for-large-up">
+        <div class="logo">
+          <a href="index.html">
+            <img src="//d327l0dy67qzb.cloudfront.net/landing/images/Shift-Agent-ICON-150px.png">
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a href="https://support.shiftagent.org" onclick="trackSupportLink(this, 'top-menu');return false;">SUPPORT</a></li>
+        <li><a href="https://shiftagent.org/sa/#/login" onclick="trackLogin(this, 'top-menu');return false;">LOGIN</a></li>
+        <li class="show-for-large-up nav_signup_button_container">
+          <a class="button success radius" href="https://shiftagent.org/sa/#/signup" onclick="trackSignupClick(this, 'top-menu');return false;">FREE TRIAL</a>
+        </li>
+      </ul>
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="pricing.html">PRICING</a></li>
+        <li><a href="index.html#features">FEATURES</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+
+      </ul>
+
+    </section>
+
+  </nav>
+</div>

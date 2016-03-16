@@ -1,0 +1,127 @@
+
+// -----------------------------------------------------------------------------
+// This file contains all classes for the About page, if any.
+// -----------------------------------------------------------------------------
+
+.about_image_band {
+  width: 100%;
+  height: 390px;
+  background-image: url('https://s3.amazonaws.com/shift_assets/landing/images/SHIFT-ORLANDO-BWweb_new2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 78%;
+
+}
+
+.about_area_container {
+  text-align: center;
+}
+
+.about_area {
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about_bar_area {
+  padding: 10px;
+  max-width: 740px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.img_team {
+  max-width:130px !important;
+}
+
+@media #{$small-only} {
+  .about_area {
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .about_image_band.short {
+    height: 200px;
+  }
+}
+
+.about_large_tagline, .about_small_tagline {
+  margin: 0 auto;
+  h1, h2 {
+    color: $white-smoke;
+  }
+}
+
+.about_large_tagline {
+  width: rem-calc(350);
+  padding-top: 20px;
+  h1 {
+    font-size: $h3-font-size;
+  }
+}
+
+.about_small_tagline {
+//  width: rem-calc(300);
+  h2 {
+    font-size: $h5-font-size;
+    color: #777;
+    padding: 10px 0 20px 0;
+  }
+  a {
+    color: $light-blue;
+  }
+}
+
+p.about_content {
+  @extend .roboto_light;
+  color: $steel;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 15px;
+}
+
+p.support_content {
+  @extend .roboto_light;
+  color: #888;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 15px;
+}
+
+.leadership_story_container {
+  padding-top: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+p.stories {
+  @extend .roboto_light;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 25px;
+  color: #777;
+
+  a.block {
+    display: block;
+  }
+}
+
+i.linkedin-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAExUlEQVRYR72Xe1BUVRzHv3d32WVXXorg8lBI0zSSLMfGnCYaR0fLGc3UUkfKSHsMjiMjmoQkhQSJDAwjk6WZha9SIzOKxobJHuTklCJijgry3F1WVhHYhV2WPc25J26cvdvuP9fOzJ2539/3d36/zz3n3r17BYwYKw/+8J4HnlTBg/iRcaXOiQrtKqgqjq2d99ZwTWH4ZPm+6suCICRNiI5EdNgoaDUqpfqKdVxuD6w9drRabSCENJxYv/AhGhcBlu6rKhCIsO3RyQm46/Sgy+GCa8ijKIBWrcJYgxbhOhX+vN4CIpDCyvWLskSAxeWn2hKN0fF9CIJjcEjRxt7FDEFqhGAQzRZr+9fpS8aLAIvKKklCfBxuDfDNHbZOdLdcF2tEJEyGIXKcInBRwWq0tHegauNSQQRYWHKCjDbGwenml32ivRWvpMwQm3589iKaRk1QBECnUeGOpQPVGcsZwPyiL4ghKkZWvGgOf8VbajsVAaBFHLfMOLPleQYwt/AoMUTFyoqXpsRxsU1nOxQEMKFm2yoGkJJ/iBii+WY0PjsmBKkPRopNK67YcM7cpxyAtQNns9cwgCfe/cwngGLdfBRyWDvwy9svMoDHd3xCDNHyH7+u+nPc1LHTZ4t60N6Du01XJI+uXlBIOBydbRi090pxbdhoGMaNhybYIENwWNvx2zsvM4DHtu8nNNF7HFk2nQutPlkv6gfCNdgxb5rkHf61HhdvtCA1ZSaSE/+9mWuvNuPwz3XoComDWqvjalHY33euYwAzsz7yCXB85SPcpBXHLog6cbQeRQumSl6jxYZJRnaveI++ASc2VNTAHmqUAfxR8CoDmLH1A2IYJ3/Gv0qdxU16tuK8pL09f/dL9YVr2Hv5rhdAKy7ueoMBJGeWE70PgG/T5nCTnjlQK2lvr6mrF3k110Q/Z+4UTBwbKuVa7vQirZJt3/Do72zFpd3pDCBpUxnRGxNkF3HmtSe52PwPf5K0t5d5+hLqTN2in2wMRfESfvtGzqU5/ZYWNJRuZABTN5YQvTFRBvBj+lwu9lR5jaT9eSE6Db5Zx8OPnMsAmnG1LIMBTEkvJsE+AGozFnAAc0q+l7Q/jyYF8gcszbhWvpkBTHq9yCfA+a2LOIBZu6ok7c+jSYF8CtC4dwsDSFxXQIJj7pNtQd32pVzs4Z2Vkvbn0aRA/oD5Jpr3ZzGA8Wn5ROcD4K/cFRzAtNzjkvbn0aRAvtN8E20HshlA7No8ojPKV+BG/ioO4P7so5L259GkQL7TchOmgzkMwLgml2hjJsq2oGVXKhdL2FohaX8eTQrku8xNsBzKZQBRq3OINmaSDKB990tcLD7zU0n782hSIN9lbsStI3kMIPKFbBLkA0BGpGBg0NwI2+f5DCBiRRbRjImFoNUr2OK/SxFXP9y3Teg+XsAAwpZtM+nCxsQMGSL+FwC1oxvOntvmnpOFsSJAyHNvloBgkyoyFoKGf28rTUTcTnhsJvpJVNr35fsZFIAeGv3izQ2AMFk1KgLQ6hXfDrrscPXDY+8GCLnef7o4CYCbNg8CQN+dQbqnN+RBrVkCQqKVvnKxniBYMeQ+5fxuTw79ZweglwMY/la8J835omQkgLgF/zSXvpbvMQQFoIf7bwzkyDzZZ081AAAAAElFTkSuQmCC);
+}
+
+.small_logo_img {
+  width:35%;
+  padding: 15px 0;
+}
+
+img.th {
+  border:0;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0);
+}

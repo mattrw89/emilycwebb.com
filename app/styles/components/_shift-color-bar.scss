@@ -1,0 +1,145 @@
+$shiftBarNumSegments: 16;
+$shiftBarBlue: $light-blue;
+$shiftBarOrange: $light-green;
+
+$shiftBarBlueOpacity: 0.25;
+$shiftBarOrangeOpacity: 0.25;
+$shiftBarOpacity: 0.25;
+
+$shiftBarColor1: $shiftBarBlue;
+$shiftBarColor2: $shiftBarOrange;
+
+$blocks-A: (
+    (color: false, width: 3, offset: 0),
+    (color: false, width: 3, offset: 0),
+    (color: true, width: 2, offset: 14),
+    (color: true, width: 2, offset: 14),
+    (color: true, width: 6, offset: 10),
+    (color: true, width: 6, offset: 10),
+    (color: true, width: 4, offset: 8),
+    (color: false, width: 9, offset: 0),
+    (color: false, width: 5, offset: 0),
+    (color: false, width: 8, offset: 0),
+    (color: true, width: 10, offset: 6),
+    (color: false, width: 2, offset: 0),
+    (color: false, width: 10, offset: 0),
+    (color: true, width: 8, offset: 8)
+);
+
+$blocks-B: (
+    (color: false, width: 2, offset: 14),
+    (color: true, width: 3, offset: 0),
+    (color: false, width: 5, offset: 6),
+    (color: true, width: 7, offset: 0),
+    (color: true, width: 8, offset: 0),
+    (color: true, width: 4, offset: 0),
+    (color: false, width: 4, offset: 12),
+    (color: false, width: 11, offset: 3),
+    (color: false, width: 8, offset: 8),
+    (color: false, width: 6, offset: 10),
+    (color: true, width: 4, offset: 0)
+);
+
+$blocks-C: (
+  (color: true, width: 1, offset: 15),
+  (color: true, width: 5, offset: 11),
+  (color: true, width: 4, offset: 12),
+  (color: true, width: 8, offset: 8),
+  (color: false, width: 3, offset: 0),
+  (color: false, width: 5, offset: 2),
+  (color: false, width: 9, offset: 0),
+  (color: false, width: 6, offset: 0),
+  (color: true, width: 4, offset: 12),
+  (color: false, width: 9, offset: 0),
+  (color: false, width: 4, offset: 0),
+  (color: true, width: 9, offset: 7),
+  (color: true, width: 6, offset: 10)
+);
+
+.shift_color_bar {
+  position: relative;
+
+  @extend .clearfix;
+}
+
+.shift_color_bar {
+
+    &.short {
+    height: 2px;
+
+    [class*="block-"] {
+      height: 2px;
+    }
+  }
+
+  &.tall {
+    height: 28px;
+
+    [class*="block-"] {
+      height: 28px;
+    }
+  }
+
+  &.medium {
+    height: 20px;
+
+    [class*="block-"] {
+      height: 20px;
+    }
+  }
+
+  [class*="block-"] {
+    position: absolute;
+    bottom: 0;
+
+    @include transition-property(opacity, width, margin-left);
+    @include transition-duration(1.0s);
+    transition-timing-function: ease-in-out;
+  }
+
+//  &.left-to-right {
+  @each $index, $block in _to-map($blocks-A) {
+    .block-varA-#{$index} {
+      background-color: rgba(if(map-get($block, 'color'), $shiftBarColor1, $shiftBarColor2), $shiftBarOpacity);
+      width: percentage(map-get($block, 'width') / $shiftBarNumSegments);
+      margin-left: percentage(map-get($block, 'offset') / $shiftBarNumSegments);
+    }
+  }
+
+  @each $index, $block in _to-map($blocks-B) {
+    .block-varB-#{$index} {
+      background-color: rgba(if(map-get($block, 'color'), $shiftBarColor1, $shiftBarColor2), $shiftBarOpacity);
+      width: percentage(map-get($block, 'width') / $shiftBarNumSegments);
+      margin-left: percentage(map-get($block, 'offset') / $shiftBarNumSegments);
+    }
+  }
+
+  @each $index, $block in _to-map($blocks-C) {
+    .block-varC-#{$index} {
+      background-color: rgba(if(map-get($block, 'color'), $shiftBarColor1, $shiftBarColor2), $shiftBarOpacity);
+      width: percentage(map-get($block, 'width') / $shiftBarNumSegments);
+      margin-left: percentage(map-get($block, 'offset') / $shiftBarNumSegments);
+    }
+  }
+//  }
+
+  &.right-to-left {
+    @each $index, $block in _to-map($blocks-A) {
+      .block-varA-#{$index} {
+        margin-left: percentage(($shiftBarNumSegments - map-get($block, 'offset') - map-get($block, 'width')) / $shiftBarNumSegments);
+      }
+    }
+
+    @each $index, $block in _to-map($blocks-B) {
+      .block-varB-#{$index} {
+        margin-left: percentage(($shiftBarNumSegments - map-get($block, 'offset') - map-get($block, 'width')) / $shiftBarNumSegments);
+      }
+    }
+
+    @each $index, $block in _to-map($blocks-C) {
+      .block-varC-#{$index} {
+        margin-left: percentage(($shiftBarNumSegments - map-get($block, 'offset') - map-get($block, 'width')) / $shiftBarNumSegments);
+      }
+    }
+  }
+}
